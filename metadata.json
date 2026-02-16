@@ -1,0 +1,7 @@
+{
+  "name": "Basement Booking Ball Court",
+  "description": "A high-end, industrial-themed pickleball court booking system with a built-in AI assistant and comprehensive admin controls.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
