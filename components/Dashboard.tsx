@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { User, Booking, MatchType, SkillLevel } from '../types';
 import { THE_PIT, TIME_SLOTS } from '../constants';
@@ -65,8 +64,11 @@ const Dashboard: React.FC<DashboardProps> = ({
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/60 to-transparent"></div>
         <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
               <span className="px-3 py-1 bg-yellow-500 text-slate-900 text-[10px] font-bold rounded-full uppercase tracking-widest shadow-[0_0_20px_rgba(234,179,8,0.4)]">Level -1</span>
+              <div className="px-3 py-1 bg-green-500/20 text-green-500 text-[10px] font-bold rounded-full border border-green-500/30 uppercase tracking-[0.2em] animate-pulse">
+                COMMUNITY_FREE_ZONE
+              </div>
               <span className="text-yellow-500/50 font-mono text-xs uppercase tracking-[0.2em]">Operational Excellence</span>
             </div>
             <h1 className="text-8xl md:text-9xl font-mono-bold text-white tracking-tighter leading-none mb-6">THE PIT</h1>
@@ -194,7 +196,7 @@ const Dashboard: React.FC<DashboardProps> = ({
                 </div>
                 <p className="text-[11px] text-white font-bold uppercase tracking-widest">Protocol Notice</p>
              </div>
-             <p className="text-slate-500 text-xs leading-relaxed font-medium">The Pit operates on a strict community-governed schedule. Failure to vacate the court within 5 minutes of your session end time may result in terminal dinking protocols.</p>
+             <p className="text-slate-500 text-xs leading-relaxed font-medium">The Pit operates on a strict community-governed schedule. This facility is 100% free. Please respect the space and your fellow players.</p>
           </div>
         </div>
       </div>

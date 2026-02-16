@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { User, UserRole } from '../types';
 
@@ -64,8 +63,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
           <h1 className="text-5xl font-mono-bold text-white mb-2 tracking-tighter">
             {activeTab === 'CUSTOMER' ? 'ACCESS_GRID' : 'SECURE_HUB'}
           </h1>
-          <p className="text-slate-500 text-sm font-medium uppercase tracking-widest">
-            {activeTab === 'CUSTOMER' ? 'Initialize Player Session' : 'Warden Authorization Required'}
+          <p className="text-slate-500 text-[10px] font-bold uppercase tracking-[0.3em]">
+            {activeTab === 'CUSTOMER' ? 'FREE COMMUNITY ACCESS' : 'WARDEN AUTHORIZATION REQUIRED'}
           </p>
         </div>
 
@@ -118,7 +117,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         </form>
 
         <p className="mt-10 text-center text-[9px] text-slate-600 uppercase tracking-[0.3em]">
-          Unauthorized access attempts are logged and dinked.
+          NO FEES REQUIRED // ALL SESSIONS ARE FREE
         </p>
       </div>
     </div>
